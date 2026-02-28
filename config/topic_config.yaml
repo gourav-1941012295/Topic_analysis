@@ -1,0 +1,26 @@
+# Topic is set by user at run time (prompt or CLI). Config below: time window, sources, report sections.
+
+report:
+  time_window_days: 30
+  sections:
+    - executive_summary
+    - market
+    - regulation
+    - technology
+    - risks
+    - opportunities
+    - appendix_citations
+
+sources:
+  news_api: true          # use NEWS_API_KEY if set
+  rss_feeds:
+    - "https://feeds.feedburner.com/techcrunch/"
+    - "https://www.wired.com/feed/rss"
+  hn: true
+  reddit:
+    subreddits: ["MachineLearning", "artificial"]
+
+advanced_reasoning:
+  - contradiction_detection
+  - source_weighting
+  - self_critique_confidence

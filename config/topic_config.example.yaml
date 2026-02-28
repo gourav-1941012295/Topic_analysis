@@ -1,0 +1,27 @@
+# Copy to topic_config.yaml and edit. Topic is asked at run time (user input).
+
+report:
+  time_window_days: 30
+  sections:
+    - executive_summary
+    - market
+    - regulation
+    - technology
+    - risks
+    - opportunities
+    - appendix_citations
+
+sources:
+  news: []           # e.g. NewsAPI, GNews
+  blogs_rss: []
+  forums:
+    - type: hn
+    - type: reddit
+      subreddits: []
+  research: []       # e.g. arXiv
+  regulators: []     # e.g. FTC, EU press releases
+
+advanced_reasoning:
+  - contradiction_detection
+  - source_weighting
+  # Pick at least 2; options: multi_hop, trend_scoring, self_critique_confidence, what_if, forecasting

@@ -1,0 +1,28 @@
+# Env and secrets
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Data and DBs (keep repo small)
+*.db
+*.sqlite
+data/
+raw/
+cache/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+
+# Generated reports (keep samples/ folder; ignore outputs)
+samples/report_*.md
+samples/report_*.json
