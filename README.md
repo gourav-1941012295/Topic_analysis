@@ -19,7 +19,8 @@ Fetches data from the web (Hacker News, RSS, optional News API), processes it (d
 ### 1. Go to the project folder
 
 ```bash
-cd agent_ai
+cd Topic_analysis
+
 ```
 
 (Use the folder that contains `run.py` — e.g. `agent_ai` or `Agent_AI`.)
